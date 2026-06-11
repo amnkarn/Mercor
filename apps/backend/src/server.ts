@@ -2,7 +2,6 @@ import express from "express";
 import { PreInterviewBody } from "../types";
 import axios from "axios";
 
-
 const app = express();
 app.use(express.json());
 
