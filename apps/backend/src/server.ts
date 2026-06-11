@@ -29,6 +29,8 @@ app.post("/api/v1/pre-interview", async (req, res) => {
     console.log(filteredUserRepos);
 })
 
-app.listen(3001, () => {
-    console.log('server is listning on port 3001');
+const PORT = process.env.PORT;
+
+app.listen(PORT, () => {
+    console.log(`server is listning on port ${PORT}`);
 })
