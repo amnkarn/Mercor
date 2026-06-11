@@ -1,8 +1,13 @@
 {
   "name": "backend",
-  "module": "index.ts",
+  "module": "server.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bun --hot src/server.ts",
+    "start": "bun server.ts",
+    "build": "bun run build.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
